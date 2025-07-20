@@ -1,6 +1,6 @@
 use std::{error::Error, fmt};
 
-#[derive(Debug, PartialEq)]
+#[derive(Debug, Clone, PartialEq)]
 pub enum Token {
     Integer(i64),
     Symbol(String),
