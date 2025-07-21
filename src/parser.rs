@@ -18,7 +18,7 @@ impl fmt::Display for ParseError {
 
 impl Error for ParseError {}
 
-#[derive(Debug, PartialEq)]
+#[derive(Debug, PartialEq, Clone)]
 pub enum Object {
     Void,
     Integer(i64),
